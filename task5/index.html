@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task5</title>
+    <style type="text/css">
+        body{
+            padding: 0;
+            margin: 0;
+            background: #eeeeee;
+        }
+
+        .header .logo{
+            float: left;
+            line-height: 80px;
+            color: #ffffff;
+            margin-left: 80px;
+        }
+
+
+        .header .right{
+            float: right;
+            color: #ffffff;
+            line-height: 80px;
+        }
+
+        .link{
+            overflow: auto;
+            *zoom:1;
+            margin: 0;
+        }
+
+        .link li{
+            float: left;
+            margin-right: 30px;
+            line-height: 80px;
+            font-size: 15px;
+        }
+
+        .header{
+            height: 80px;
+            width: 100%;
+            background: #222222;
+        }
+
+        .footer{
+            height: 80px;
+            width: 100%;
+            background: #222222;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .container{
+            padding: 20px;
+        }
+
+        .content{
+            margin-right: 420px;
+        }
+
+        .article{
+            padding: 40px 20px;
+            border: 1px solid #cccccc;
+            margin-bottom: 40px;
+        }
+
+        .submit{
+            width: 400px;
+            height: 500px;
+            float: right;
+            border: 1px solid #cccccc;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+
+        .submit .title{
+            border-left: 2px solid #cccccc;
+            font-size: 18px;
+            font-weight: bolder;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            百度前端
+        </div>
+        <div class="right">
+            <ul class="link">
+                <li>导航链接一</li>
+                <li>导航链接二</li>
+                <li>导航链接三</li>
+                <li>导航链接四</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="submit">
+            <div class="title">
+                这里以后是一个侧栏,这是侧栏的标题
+            </div>
+            <div class="group">
+                <span>请输入邮箱地址</span>
+                <input type="text" />
+                <div>邮箱地址请按要求格式输入</div>
+            </div>
+            <div class="group">
+                <span>请输入密码</span>
+                <input type="password" />
+            </div>
+            <div class="group">
+                <span>请重复输入密码</span>
+                <input type="password" />
+                <div>密码请为6-16位英文数字</div>
+            </div>
+            <div class="group">
+                <span>性别</span>
+                <input value="男" type="radio" />
+                <input value="女" type="radio" />
+            </div>
+            <div class="group">
+                <span>城市</span>
+                <input type="" />
+            </div>
+            <div class="group">
+                <span>爱好</span>
+                <input type="checkbox" />
+                <input type="checkbox" />
+                <input type="checkbox" />
+            </div>
+            <div class="group">
+                <span>个人描述</span>
+                <textarea placeholder="这是一个多行输入框,输入您的个人描述">
+
+                </textarea>
+            </div>
+            <div class="group">
+                <input type="submit">
+            </div>
+
+        </div>
+        <div class="content">
+            <div class="article">
+                <h1>文章一级标题</h1>
+                <h3>文章二级标题</h3>
+                <h6>文章作者  文章发表时间</h6>
+
+            </div>
+            <div class="article">
+
+            </div>
+        </div>
+
+    </div>
+    <div class="footer"></div>
+
+</body>
+</html>
