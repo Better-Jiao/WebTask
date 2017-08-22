@@ -48,7 +48,6 @@
             width: 100%;
             background: #222222;
             position: absolute;
-            bottom: 0;
             left: 0;
             right: 0;
         }
@@ -56,16 +55,19 @@
         .container{
             padding: 20px;
             overflow: auto;
+
         }
 
         .content{
             margin-right: 420px;
+            min-width: 400px;
         }
 
         .article{
-            padding: 40px 20px;
+            padding: 20px 20px;
             border: 1px solid #cccccc;
             margin-bottom: 40px;
+            overflow: auto;
         }
 
         .taskImg{
@@ -74,8 +76,8 @@
         }
 
         .singleImg{
-            width: 200px;
-            height: 100px;
+            width: 400px;
+            height: 300px;
         }
 
         .submit{
@@ -89,9 +91,62 @@
 
 
         .submit .title{
-            border-left: 2px solid #cccccc;
+            border-left: 3px solid #cccccc;
             font-size: 18px;
             font-weight: bolder;
+            padding: 4px 10px;
+            margin-bottom: 5px;
+        }
+
+        .submit .group{
+            overflow: auto;
+            margin: 10px 0;
+        }
+
+        .group span {
+            display: inline-block;
+            width: 40%;
+            font-size: 14px;
+            text-align: right;
+        }
+
+        .group .description{
+            padding-left: 40%;
+            font-size: 13px;
+            color: #bbbbbb;
+        }
+
+        .group textarea{
+            width: 200px;
+            height: 100px;
+        }
+
+        .group .gosubmit{
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 10px;
+            background: darkblue;
+            color: white;
+            border: 0;
+        }
+
+
+        h1,h2,h3{
+            margin: 5px;
+        }
+
+        .pic{
+            float: left;
+            border: 1px solid #cccccc;
+            margin: 5px 5px;
+            padding: 5px;
+        }
+
+        .pic span{
+            display: block;
+            margin: 5px;
+            text-align: center;
         }
 
     </style>
@@ -99,12 +154,12 @@
 <body>
     <div class="header">
         <div class="logo">
-            任务5:零基础ßß
+            任务5:零基础
         </div>
         <div class="right">
             <ul class="link">
                 <li>导航链接一</li>
-                <li>导航链接二</li>ßß
+                <li>导航链接二</li>
                 <li>导航链接三</li>
                 <li>导航链接四</li>
             </ul>
@@ -118,7 +173,7 @@
             <div class="group">
                 <span>请输入邮箱地址</span>
                 <input type="text" />
-                <div>邮箱地址请按要求格式输入</div>
+                <div class="description">邮箱地址请按要求格式输入</div>
             </div>
             <div class="group">
                 <span>请输入密码</span>
@@ -127,22 +182,27 @@
             <div class="group">
                 <span>请重复输入密码</span>
                 <input type="password" />
-                <div>密码请为6-16位英文数字</div>
+                <div class="description">密码请为6-16位英文数字</div>
             </div>
             <div class="group">
                 <span>性别</span>
-                <input value="男" type="radio" />
-                <input value="女" type="radio" />
+                <input  type="radio" name="sex" />男
+                <input  type="radio" name="sex" />女
             </div>
             <div class="group">
                 <span>城市</span>
-                <input type="" />
+                <select type="">
+                    <option>南昌</option>
+                    <option>杭州</option>
+                    <option>北京</option>
+                    <option>上海</option>
+                </select>
             </div>
             <div class="group">
                 <span>爱好</span>
-                <input type="checkbox" />
-                <input type="checkbox" />
-                <input type="checkbox" />
+                <input type="checkbox" name="habbit"/>运动
+                <input type="checkbox" name="habbit"/>艺术
+                <input type="checkbox" name="habbit"/>科学
             </div>
             <div class="group">
                 <span>个人描述</span>
@@ -151,7 +211,7 @@
                 </textarea>
             </div>
             <div class="group">
-                <input type="submit">
+                <input class="gosubmit" type="submit">
             </div>
 
         </div>
@@ -163,7 +223,7 @@
                 <p>1、提高性能
                     SQL语句在创建过程时进行分析和编译。 存储过程是预编译的，在首次运行一个存储过程时，查询优化器对其进行分析、优化，并给出最终被存在系统表中的存储计划，这样，在执行过程时便可节省此开销。
                     2、降低网络开销
-                    存储过程调用时只需用提供存储过程名和必要的参数信息，从而可降低网络的流量。
+                    存储过程调用时只需<a href="http://www.baidu.com">这是一个连接http://www.baidu.com</a>用提供存储过程名和必要的参数信息，从而可降低网络的流量。
                     3、便于进行代码移植
                     数据库专业人员可以随时对存储过程进行修改，但对应用程序源代码却毫无影响，从而极大的提高了程序的可移植性。
                     4、更强的安全性
@@ -176,16 +236,47 @@
                     4）可以对过程进行加密，这有助于对源代码进行模糊处理。</p>
             </div>
             <div class="article">
-                <img class="taskImg" src="task5.jpg" />
-                <img class="taskImg" src="task5.jpg" />
-                <img class="taskImg" src="task5.jpg" />
-                <img class="taskImg" src="task5.jpg" />
-                <img class="taskImg" src="task5.jpg" />
-                <img class="taskImg" src="task5.jpg" />
-                <img class="taskImg" src="task5.jpg" />
-                <img class="taskImg" src="task5.jpg" />
-                <img class="taskImg" src="task5.jpg" />
-                <img class="taskImg" src="task5.jpg" />
+                <h2>图片</h2>
+                <div class="pic">
+                    <span>好看的图片</span>
+                    <img class="taskImg" src="task5.jpg" />
+                </div>
+                <div class="pic">
+                    <span>好看的图片</span>
+                    <img class="taskImg" src="task5.jpg" />
+                </div>
+                <div class="pic">
+                    <span>好看的图片</span>
+                    <img class="taskImg" src="task5.jpg" />
+                </div>
+                <div class="pic">
+                    <span>好看的图片</span>
+                    <img class="taskImg" src="task5.jpg" />
+                </div>
+                <div class="pic">
+                    <span>好看的图片</span>
+                    <img class="taskImg" src="task5.jpg" />
+                </div>
+                <div class="pic">
+                    <span>好看的图片</span>
+                    <img class="taskImg" src="task5.jpg" />
+                </div>
+                <div class="pic">
+                    <span>好看的图片</span>
+                    <img class="taskImg" src="task5.jpg" />
+                </div>
+                <div class="pic">
+                    <span>好看的图片</span>
+                    <img class="taskImg" src="task5.jpg" />
+                </div>
+                <div class="pic">
+                    <span>好看的图片</span>
+                    <img class="taskImg" src="task5.jpg" />
+                </div>
+                <div class="pic">
+                    <span>好看的图片</span>
+                    <img class="taskImg" src="task5.jpg" />
+                </div>
             </div>
         </div>
     </div>
